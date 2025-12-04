@@ -1,4 +1,5 @@
 Django>=4.2
+gunicorn>=21.2
 weasyprint>=57.1
 openpyxl>=3.1
 astral>=3.2

@@ -8,16 +8,16 @@ WORKDIR /app
 # system deps for optional libraries (weasyprint needs some libs)
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-       build-essential \
-       libpango-1.0-0 \
-       libgdk-pixbuf2.0-0 \
-       libffi-dev \
-       libxml2 \
-       libxml2-dev \
-       libxslt1-dev \
-       zlib1g-dev \
-       libssl-dev \
-       ca-certificates \
+    build-essential \
+    libpango-1.0-0 \
+    libgdk-pixbuf-xlib-2.0-0 \
+    libffi-dev \
+    libxml2 \
+    libxml2-dev \
+    libxslt1-dev \
+    zlib1g-dev \
+    libssl-dev \
+    ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
 # copy requirements first for caching
